@@ -4,78 +4,215 @@
 <head>
     <meta charset="UTF-8">
     <title>Elora Cosmetics</title>
+
     <style>
-        body {font-family: Arial, sans-serif;
+        body {
+            font-family: Arial, sans-serif;
             background-color: #fff8f8;
             color: #4a3636;
-            margin: 0;}
-        header {background-color: #ffffff;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ffffff;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #e5caca; }
-        header h1 {color: #bd6577; margin: 5px; }
-        nav { margin-top: 15px;}
-        nav a { color: #4a3636; text-decoration: none; margin: 0 15px; }
-        nav a:hover { color: #bd6577; }
-        .banner { background-color: #f8dfe3; padding: 50px; text-align: center;}
-        .banner h2 {color: #9e5265;font-size: 32px;}
-        .banner p {font-size: 17px;}
-        .container {width: 85%;margin: auto;}
-        section {padding: 40px 0;}
-        section h2 {text-align: center;color: #9e5265;}
-        .categories {text-align: center;}
-        .category { background-color: white;
+            border-bottom: 1px solid #e5caca;
+        }
+
+        header h1 {
+            color: #bd6577;
+            margin: 5px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #4a3636;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #bd6577;
+        }
+
+        .banner {
+            background-color: #f8dfe3;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            color: #9e5265;
+            font-size: 32px;
+        }
+
+        .banner p {
+            font-size: 17px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #9e5265;
+        }
+
+        .categories {
+            text-align: center;
+        }
+
+        .category {
+            background-color: white;
             border: 1px solid #ead6d6;
             padding: 20px;
             margin: 10px;
             display: inline-block;
             width: 25%;
-            vertical-align: top; }
-        .category h3 {color: #bd6577;}
-        .products { text-align: center; }
-        .product {background-color: white;
+            vertical-align: top;
+        }
+
+        .category h3 {
+            color: #bd6577;
+        }
+
+        .products {
+            text-align: center;
+        }
+
+        .product {
+            background-color: white;
             border: 1px solid #ead6d6;
             width: 210px;
             margin: 10px;
             padding: 15px;
             display: inline-block;
-            vertical-align: top; }
-        .product img { width: 210px;height: 210px;object-fit: cover;}
-        .product h3 {font-size: 17px; }
-        .price {color: #bd6577;font-weight: bold;ont-size: 18px;}
-        button { background-color: #bd6577;
+            vertical-align: top;
+        }
+
+        .product img {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 17px;
+        }
+
+        .price {
+            color: #bd6577;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #bd6577;
             color: white;
             border: none;
             padding: 10px 18px;
-            border-radius: 5px; }
-        button:hover {background-color: #9e5265;}
-        .about { background-color: #f8e8ea;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #9e5265;
+        }
+
+        .about {
+            background-color: #f8e8ea;
             padding: 35px;
-            text-align: center; }
-        .contact {text-align: center;}
-        footer {background-color: #3d3030;
+            text-align: center;
+        }
+
+        /* PHẦN ĐẶT HÀNG */
+        .order {
+            background-color: white;
+            border: 1px solid #ead6d6;
+            padding: 30px;
+            width: 70%;
+            margin: auto;
+        }
+
+        .order label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .order input,
+        .order select,
+        .order textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 7px;
+            border: 1px solid #d9c3c3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .order button {
+            margin-top: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #3d3030;
             color: white;
             text-align: center;
             padding: 25px;
-            margin-top: 30px; }
-        footer a {color: #f2aeba; }
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #f2aeba;
+        }
     </style>
 </head>
+
 <body>
+
     <!-- PHẦN ĐẦU TRANG -->
     <header>
+
         <h1>ELORA COSMETICS</h1>
+
         <p>Mỹ phẩm dành cho vẻ đẹp tự nhiên</p>
+
         <nav>
+
             <a href="#trangchu">Trang chủ</a>
+
             <a href="#danhmuc">Danh mục</a>
+
             <a href="#sanpham">Sản phẩm</a>
+
+            <a href="#dathang">Đặt hàng</a>
+
             <a href="#gioithieu">Giới thiệu</a>
+
             <a href="#lienhe">Liên hệ</a>
+
         </nav>
+
     </header>
+
+
     <!-- PHẦN GIỚI THIỆU -->
     <div class="banner" id="trangchu">
+
         <h2>Vẻ đẹp của bạn, theo cách riêng</h2>
 
         <p>
@@ -83,147 +220,355 @@
             Chúng tôi là nơi cung cấp cho bạn các sản phẩm mỹ phẩm
             giúp chăm sóc và làm đẹp mỗi ngày.
         </p>
+
         <button>Xem sản phẩm</button>
+
     </div>
+
+
     <div class="container">
+
+
         <!-- DANH MỤC -->
         <section id="danhmuc">
+
             <h2>Danh mục sản phẩm</h2>
+
             <div class="categories">
+
                 <div class="category">
+
                     <h3>💄 Trang điểm</h3>
+
                     <p>
                         Son môi, phấn má, cushion
                         và các sản phẩm trang điểm.
                     </p>
+
                 </div>
+
+
                 <div class="category">
+
                     <h3>🧴 Chăm sóc da</h3>
+
                     <p>
                         Sữa rửa mặt, serum, kem dưỡng
                         giúp chăm sóc làn da.
                     </p>
+
                 </div>
+
+
                 <div class="category">
+
                     <h3>🌸 Chăm sóc cơ thể</h3>
+
                     <p>
                         Sữa dưỡng thể, xịt thơm
                         và các sản phẩm chăm sóc cơ thể.
                     </p>
+
                 </div>
+
             </div>
+
         </section>
+
+
         <!-- SẢN PHẨM -->
         <section id="sanpham">
+
             <h2>Sản phẩm nổi bật</h2>
+
             <div class="products">
+
 
                 <!-- SẢN PHẨM 1 -->
                 <div class="product">
+
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2JJAZ1NBEEbrUvfFPMGhlExClzxZ34-9EeDxqDtNdMw&s=10">
 
                     <h3>Son Kem Lì</h3>
+
                     <p>
                         Son kem lì với màu sắc
                         nhẹ nhàng, phù hợp sử dụng hằng ngày.
                     </p>
 
-                    <p class="price">189.000đ</p>
-                    <button>Mua hàng</button>
+                    <p class="price">
+                        189.000đ
+                    </p>
+
+                    <a href="#dathang">
+                        <button>Mua hàng</button>
+                    </a>
+
                 </div>
+
 
                 <!-- SẢN PHẨM 2 -->
                 <div class="product">
+
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbfIr3jt7WCwngwm_g3A_R8nZc2OHWTmCm5KxxK4GFA&s=10">
 
-                    <h3>Sữa dưỡng ẩm </h3>
+                    <h3>Sữa dưỡng ẩm</h3>
+
                     <p>
                         Giúp bổ sung độ ẩm,
                         mang lại cảm giác mềm mại cho làn da.
                     </p>
-                    <p class="price">329.000đ</p>
-                    <button>Mua hàng</button>
+
+                    <p class="price">
+                        329.000đ
+                    </p>
+
+                    <a href="#dathang">
+                        <button>Mua hàng</button>
+                    </a>
+
                 </div>
+
 
                 <!-- SẢN PHẨM 3 -->
                 <div class="product">
+
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2Pw5VJs4D6g2pO9yh0yVzCwAurBct6n8XnXmaAMnzA&s=10">
 
-                    <h3>Phấn Má Hồng </h3>
+                    <h3>Phấn Má Hồng</h3>
+
                     <p>
                         Màu má nhẹ nhàng,
                         tạo vẻ tươi tắn và tự nhiên.
                     </p>
-                    <p class="price">239.000đ</p>
-                    <button>Mua hàng</button>
+
+                    <p class="price">
+                        239.000đ
+                    </p>
+
+                    <a href="#dathang">
+                        <button>Mua hàng</button>
+                    </a>
+
                 </div>
+
 
                 <!-- SẢN PHẨM 4 -->
                 <div class="product">
+
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr4GuOq2tKexhIBujDXCG1FhS6d9EN_bhJLST6kfB8g&s=10">
 
                     <h3>Sữa Dưỡng Thể hương nước hoa</h3>
+
                     <p>
                         Dưỡng ẩm cho cơ thể
                         với hương hoa nhẹ nhàng.
                     </p>
-                    <p class="price">219.000đ</p>
-                    <button>Mua hàng</button>
+
+                    <p class="price">
+                        219.000đ
+                    </p>
+
+                    <a href="#dathang">
+                        <button>Mua hàng</button>
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
+
+
+        <!-- ĐẶT HÀNG VÀ THANH TOÁN -->
+        <section id="dathang">
+
+            <h2>Đặt hàng và thanh toán</h2>
+
+            <div class="order">
+
+                <form>
+
+                    <label>
+                        Họ và tên:
+                    </label>
+
+                    <input type="text"
+                           placeholder="Nhập họ và tên">
+
+
+                    <label>
+                        Số điện thoại:
+                    </label>
+
+                    <input type="text"
+                           placeholder="Nhập số điện thoại">
+
+
+                    <label>
+                        Địa chỉ nhận hàng:
+                    </label>
+
+                    <textarea
+                        rows="3"
+                        placeholder="Nhập địa chỉ nhận hàng">
+                    </textarea>
+
+
+                    <label>
+                        Chọn sản phẩm:
+                    </label>
+
+                    <select>
+
+                        <option>
+                            -- Chọn sản phẩm --
+                        </option>
+
+                        <option>
+                            Son Kem Lì - 189.000đ
+                        </option>
+
+                        <option>
+                            Sữa Dưỡng Ẩm - 329.000đ
+                        </option>
+
+                        <option>
+                            Phấn Má Hồng - 239.000đ
+                        </option>
+
+                        <option>
+                            Sữa Dưỡng Thể hương nước hoa - 219.000đ
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Số lượng:
+                    </label>
+
+                    <input type="number"
+                           min="1"
+                           value="1">
+
+
+                    <label>
+                        Phương thức thanh toán:
+                    </label>
+
+                    <p>
+                        <input type="radio"
+                               name="payment">
+                        Thanh toán khi nhận hàng
+                    </p>
+
+                    <p>
+                        <input type="radio"
+                               name="payment">
+                        Chuyển khoản
+                    </p>
+
+
+                    <button type="submit">
+                        Đặt hàng và thanh toán
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
         <!-- GIỚI THIỆU -->
         <section id="gioithieu">
+
             <div class="about">
+
                 <h2>Giới thiệu về Elora</h2>
+
                 <p>
                     Elora Cosmetics là một thương hiệu mỹ phẩm
                     hướng đến những sản phẩm đơn giản, dễ sử dụng
                     và phù hợp với nhu cầu làm đẹp hằng ngày.
                 </p>
+
                 <p>
                     Với Elora, chúng tôi mong muốn mỗi khách hàng
                     đều có thể chăm sóc bản thân và tự tin thể hiện
                     vẻ đẹp riêng của mình.
                 </p>
+
                 <p>
                     Cảm ơn vì đã tin tưởng lựa chọn Elora!
                 </p>
+
             </div>
+
         </section>
+
+
         <!-- THÔNG TIN LIÊN HỆ -->
         <section id="lienhe">
+
             <div class="contact">
+
                 <h2>Liên hệ với chúng tôi</h2>
+
                 <p>
                     <strong>Địa chỉ:</strong>
                     Cần Thơ, Việt Nam
                 </p>
+
                 <p>
                     <strong>Điện thoại:</strong>
                     0123 456 789
                 </p>
+
                 <p>
                     <strong>Email:</strong>
                     hello@elora.vn
                 </p>
+
             </div>
+
         </section>
+
     </div>
+
+
     <!-- CHÂN TRANG -->
     <footer>
+
         <h3>Elora Cosmetics</h3>
+
         <p>
             Vẻ đẹp tự nhiên - Tự tin mỗi ngày
         </p>
+
         <p>
-            <a href="https://example.com">Elora</a>
+
+            <a href="https://example.com">
+                Elora
+            </a>
+
             © 2026 by
-            <a href="https://example.com">Danh Ngọc Hân</a>
+
+            <a href="https://example.com">
+                Danh Ngọc Hân
+            </a>
+
             is licensed under
+
             <a href="https://creativecommons.org/licenses/by-nc/4.0/">
                 CC BY-NC 4.0
             </a>
+
         </p>
+
     </footer>
+
 </body>
+
+</html>
